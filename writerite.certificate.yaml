@@ -1,0 +1,13 @@
+apiVersion: stable.k8s.psg.io/v1
+kind: Certificate
+metadata:
+  name: writerite
+  labels:
+    stable.k8s.psg.io/kcm.class: default
+spec:
+  domain: writerite.site
+  altNames:
+    - www.writerite.site
+  email: admin@writerite.site
+  provider: googlecloud
+  secretName: wr-tls
